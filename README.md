@@ -19,7 +19,8 @@ The software is implemented as an Android Studio project and is used to control 
 
 ## Three-step measurement workflow
 
-![BV-NEL three-step workflow](docs/figures/BV_NEL_three_step_workflow.png)
+[Fig2.pdf](https://github.com/user-attachments/files/29808979/Fig2.pdf)
+
 
 BV-NEL follows a three-step workflow:
 
