@@ -1,0 +1,33 @@
+{
+  "package_name": "BV_NEL_Android_App_GitHub_Ready_V6_record_management",
+  "generated_at": "2026-07-08T03:16:25",
+  "basis_source_zip": "V6_BVNEL.zip",
+  "included_top_level_items": [
+    ".gitignore",
+    "CITATION.cff",
+    "GITHUB_UPLOAD_CHECKLIST.md",
+    "LICENSE_CHOOSE_BEFORE_RELEASE.txt",
+    "README.md",
+    "app",
+    "build.gradle.kts",
+    "docs",
+    "examples",
+    "gradle",
+    "gradle.properties",
+    "gradlew",
+    "gradlew.bat",
+    "settings.gradle.kts"
+  ],
+  "excluded_from_source_zip": [
+    "eh test.jks",
+    "app/release/",
+    "app/build/",
+    "*.apk",
+    "*.aab",
+    "local.properties",
+    "root icon.PNG",
+    "root icon_cropped.png"
+  ],
+  "notes": "V6 GitHub-ready package with record-management update, example files, documentation, communication protocol, and non-commercial academic research license.",
+  "license": "Custom Non-Commercial Academic Research License; no patent license granted; commercial use requires prior written permission."
+}
