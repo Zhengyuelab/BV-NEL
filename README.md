@@ -1,5 +1,3 @@
-# BV-NEL_App
-Rapidly determine the Eh potential of sediments or soil
 # BV-NEL Android App
 
 This repository contains the Android source code and documentation for a BV-NEL electrochemical measurement app. The app controls a compatible electrochemical workstation through USB serial communication, executes the BV-NEL measurement workflow, reads current/potential data, performs linear fitting, and exports saved test records.
