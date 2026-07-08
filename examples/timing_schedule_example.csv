@@ -1,0 +1,27 @@
+phase,step,start_time_s,end_time_s,duration_s,sampling_interval,post_stop_delay,inter_it_delay_after,notes
+OCP,OCP recording,0.0,40.0,40.0,0.1 s,,,400 points
+OCP,post-stop delay,40.0,41.5,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+coarse,COARSE_Ei_minus_100mV,41.5,49.5,8.0,0.1 s,,,target=87.360 mV; 80 points
+coarse,post-stop delay,49.5,51.0,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+coarse,inter-i-t delay,51.0,56.0,5.0,,,5.0 s,IT_INTERVAL_BETWEEN_MEASUREMENTS_MS
+coarse,COARSE_Ei,56.0,64.0,8.0,0.1 s,,,target=187.360 mV; 80 points
+coarse,post-stop delay,64.0,65.5,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+coarse,inter-i-t delay,65.5,70.5,5.0,,,5.0 s,IT_INTERVAL_BETWEEN_MEASUREMENTS_MS
+coarse,COARSE_Ei_plus_100mV,70.5,78.5,8.0,0.1 s,,,target=287.360 mV; 80 points
+coarse,post-stop delay,78.5,80.0,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+coarse,fit E0,80.0,80.0,0.0,,,,instant linear fit
+fine,FINE_E0_-10mV,80.0,88.0,8.0,0.1 s,,,target=177.360 mV; 80 points
+fine,post-stop delay,88.0,89.5,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+fine,inter-i-t delay,89.5,94.5,5.0,,,5.0 s,IT_INTERVAL_BETWEEN_MEASUREMENTS_MS
+fine,FINE_E0_-5mV,94.5,102.5,8.0,0.1 s,,,target=182.360 mV; 80 points
+fine,post-stop delay,102.5,104.0,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+fine,inter-i-t delay,104.0,109.0,5.0,,,5.0 s,IT_INTERVAL_BETWEEN_MEASUREMENTS_MS
+fine,FINE_E0_+0mV,109.0,117.0,8.0,0.1 s,,,target=187.360 mV; 80 points
+fine,post-stop delay,117.0,118.5,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+fine,inter-i-t delay,118.5,123.5,5.0,,,5.0 s,IT_INTERVAL_BETWEEN_MEASUREMENTS_MS
+fine,FINE_E0_+5mV,123.5,131.5,8.0,0.1 s,,,target=192.360 mV; 80 points
+fine,post-stop delay,131.5,133.0,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+fine,inter-i-t delay,133.0,138.0,5.0,,,5.0 s,IT_INTERVAL_BETWEEN_MEASUREMENTS_MS
+fine,FINE_E0_+10mV,138.0,146.0,8.0,0.1 s,,,target=197.360 mV; 80 points
+fine,post-stop delay,146.0,147.5,1.5,,1.5 s,,POST_EXPERIMENT_DELAY_MS
+fine,fit Eh,147.5,147.5,0.0,,,,instant final linear fit

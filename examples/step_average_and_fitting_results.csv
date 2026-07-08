@@ -1,0 +1,9 @@
+section,step_index,step_name,target_potential_mV,average_current_uA,fit_slope_mV_per_uA,fit_intercept_mV,fit_r2,notes
+coarse,1,COARSE_Ei_minus_100mV,87.360,-0.25000000,400.000000,187.360000,1.000000,3-point coarse fit for E0 estimation
+coarse,2,COARSE_Ei,187.360,0.00000000,400.000000,187.360000,1.000000,3-point coarse fit for E0 estimation
+coarse,3,COARSE_Ei_plus_100mV,287.360,0.25000000,400.000000,187.360000,1.000000,3-point coarse fit for E0 estimation
+fine,1,FINE_E0_-10mV,177.360,-0.02421820,479.615512,187.362707,0.912355,5-point fine fit for Eh estimation
+fine,2,FINE_E0_-5mV,182.360,-0.00674818,479.615512,187.362707,0.912355,5-point fine fit for Eh estimation
+fine,3,FINE_E0_+0mV,187.360,0.00588456,479.615512,187.362707,0.912355,5-point fine fit for Eh estimation
+fine,4,FINE_E0_+5mV,192.360,0.01017859,479.615512,187.362707,0.912355,5-point fine fit for Eh estimation
+fine,5,FINE_E0_+10mV,197.360,0.01487501,479.615512,187.362707,0.912355,5-point fine fit for Eh estimation
