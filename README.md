@@ -61,54 +61,6 @@ Usage process
 6. After the tests of 9 samples are completed, click "**Clear**" to clear all current records, and then continue to measure the subsequent samples.
 
 
-## Repository contents
-
-| Path | Description |
-|---|---|
-| `app/` | Main Android Studio source code, including the user interface, USB communication, protocol encoding/decoding, BV-NEL workflow control, data processing, record management, and TXT export. |
-| `docs/` | Method documentation, parameter table, data-format notes, record-management notes, communication protocol, and workflow figure. |
-| `examples/` | Mobile-side TXT record export example and screenshots. |
-| `gradle/`, `build.gradle.kts`, `settings.gradle.kts`, `gradle.properties`, `gradlew`, `gradlew.bat` | Android Studio/Gradle project files required for building the software. |
-| `README.md` | Overview and usage instructions. |
-| `GITHUB_UPLOAD_CHECKLIST.md` | Checklist for reviewing files before public release. |
-| `PACKAGE_MANIFEST.json` | Summary of the packaged files. |
-| `CITATION.cff` | Citation metadata for the repository. |
-| `LICENSE` | Custom license allowing non-commercial academic research use only. Commercial use requires prior written permission. |
-
-## Core source files
-
-| File | Main role |
-|---|---|
-| `app/src/main/java/com/example/eprotocol/domain/TestOrchestrator.kt` | Controls the BV-NEL measurement sequence: initial potential measurement, coarse i-t measurement, preliminary fitting, refined i-t measurement, and final Eh fitting. |
-| `app/src/main/java/com/example/eprotocol/domain/MathUtils.kt` | Provides averaging, linear regression, R² calculation, and outlier handling. |
-| `app/src/main/java/com/example/eprotocol/data/usb/ProtocolCodec.kt` | Builds hex commands, buffers incoming streams, parses data packets, reads calibration data, and converts raw current/potential values. |
-| `app/src/main/java/com/example/eprotocol/data/usb/UsbSerialManager.kt` | Manages USB permission, serial-port configuration, connection state, and data input/output. |
-| `app/src/main/java/com/example/eprotocol/ui/MainViewModel.kt` | Manages measurement state, test start/stop, result saving, record deletion, batch clearing, TXT export, and diagnostic export. |
-| `app/src/main/java/com/example/eprotocol/ui/MainScreen.kt` | Provides the main Compose interface, result page, record page, save/delete/clear/export controls, and plots. |
-| `app/src/main/java/com/example/eprotocol/data/model/Models.kt` | Defines data models for measurement states, raw points, regression results, and saved records. |
-
-## Communication protocol
-
-The software-instrument communication protocol is documented in:
-
-- `docs/hardware_app_communication_protocol.md`
-- `docs/protocol_original_v1.md`
-
-These files describe the customized portable electrochemical workstation information, USB serial configuration, command frame format, current-range setting command, OCP read command, i-t command, start/stop sampling commands, returned data structure, and raw-value conversion rules.
-
-## Build environment
-
-- Android Studio project
-- Kotlin + Jetpack Compose
-- Gradle wrapper included
-- `minSdk = 26`, `targetSdk = 35`, `compileSdk = 35`
-- USB serial dependency: `com.github.mik3y:usb-serial-for-android:3.8.1`
-- Regression dependency: `org.apache.commons:commons-math3:3.6.1`
-
-## Build
-
-Open the repository folder in Android Studio, sync Gradle, select the required build variant, and run the `app` module on an Android device connected to the electrochemical workstation.
-
 ## License and use restrictions
 
 This repository is released for non-commercial academic research, teaching, peer review, and reproducibility purposes. Commercial use is not permitted without prior written permission from the copyright holder(s) or the corresponding author of the associated publication. No patent license is granted. See `LICENSE` for details.
