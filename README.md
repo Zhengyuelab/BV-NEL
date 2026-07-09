@@ -48,16 +48,14 @@ A refined near-equilibrium response is measured around **E<sub><i>prelim</i></su
 8. Save the result if the measurement is valid.
 9. Use the records page to view saved records, delete individual records, clear a batch after export, or export all records as a TXT file.
 
-## Example files
+## Example results
 
-The `examples/` folder contains files exported or captured directly from the mobile-side workflow:
+Schematic diagram of the app page
 
-| File/folder | Description |
-|---|---|
-| `examples/records/` | Example TXT file exported from the record-management page. |
-| `examples/screenshots/` | Example screenshots showing the result page and record page. |
+<img width="980" height="669" alt="示例截图" src="https://github.com/user-attachments/assets/cd87cbff-7def-457c-a0c3-c4d04323301b" />
 
-These files are provided only to show the expected record-export format and user-interface output. Intermediate OCP values, potential-step currents, and fitting tables are not included as example files in this repository.
+
+The App results display the measurement progress, linear fitting results, result naming, clearing, and data export.
 
 ## Repository contents
 
