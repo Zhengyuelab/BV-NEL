@@ -22,6 +22,7 @@ The software is implemented as an Android Studio project and is used to control 
 <img width="1888" height="870" alt="流程图" src="https://github.com/user-attachments/assets/89aef09d-2142-4597-aeb7-7b03e267a67b" />
 
 
+
 BV-NEL follows a three-step workflow:
 
 ### Step 1. Initial potential measurement
