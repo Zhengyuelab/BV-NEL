@@ -37,7 +37,7 @@ A coarse local response is measured around **E<sub><i>initial</i></sub> ± 100 m
 
 A refined near-equilibrium response is measured around **E<sub><i>prelim</i></sub> ± 10 mV** using **5 potential steps**. Each i-t measurement lasts **8 s**, with data recorded every **0.1 s**. The average current from the final **1 s** of each i-t step is used for the final current-potential linear fitting. The final Eh is calculated from the zero-current intercept of this local linear fit. The fit is accepted when the R² value meets the preset quality-control criterion.
 
-## Installation of BV-NEL
+## How to use
 
 1. Open this repository in **Android Studio**.
 2. Sync the Gradle project and build the `app` module.
@@ -45,7 +45,7 @@ A refined near-equilibrium response is measured around **E<sub><i>prelim</i></su
 4. Connect the portable electrochemical workstation to the Android device using a USB data cable.
 
 
-## Usage method of BV-NEL
+## Example files
 
 Schematic diagram of the app page
 
