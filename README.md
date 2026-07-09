@@ -17,11 +17,12 @@ BV-NEL standardizes the measurement process by combining:
 
 The software is implemented as an Android Studio project and is used to control the portable electrochemical workstation through USB serial communication. The customized portable electrochemical workstation used in this implementation was provided by **Wuxi Signal Technology Co., Ltd.**
 
-## Three-step measurement workflow
+## BV-NEL measurement workflow
 
 <p align="center">
   <img src="docs/images/Workflow.png" width="950" alt="BV-NEL three-step measurement workflow">
 </p>
+
 
 BV-NEL follows a three-step workflow:
 
