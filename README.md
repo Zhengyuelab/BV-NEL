@@ -15,11 +15,11 @@ BV-NEL standardizes the measurement process by combining:
 - quality control using the fitting coefficient (R²);
 - saving, deleting, clearing, and exporting measurement records.
 
-The software is implemented as an Android Studio project and is used to control the portable electrochemical workstation through USB serial communication.
+The software is implemented as an Android Studio project and is used to control the portable electrochemical workstation through USB serial communication. The customized portable electrochemical workstation used in this implementation was provided by **Wuxi Signal Technology Co., Ltd.**
 
 ## Three-step measurement workflow
 
-<img width="1888" height="870" alt="流程图" src="https://github.com/user-attachments/assets/b364d0b9-9451-4483-84c3-342724e2749f" />
+<img width="1888" height="870" alt="流程图" src="https://github.com/user-attachments/assets/89aef09d-2142-4597-aeb7-7b03e267a67b" />
 
 
 BV-NEL follows a three-step workflow:
@@ -92,7 +92,7 @@ The software-instrument communication protocol is documented in:
 - `docs/hardware_app_communication_protocol.md`
 - `docs/protocol_original_v1.md`
 
-These files describe the USB serial configuration, command frame format, current-range setting command, OCP read command, i-t command, start/stop sampling commands, returned data structure, and raw-value conversion rules.
+These files describe the customized portable electrochemical workstation information, USB serial configuration, command frame format, current-range setting command, OCP read command, i-t command, start/stop sampling commands, returned data structure, and raw-value conversion rules.
 
 ## Build environment
 
