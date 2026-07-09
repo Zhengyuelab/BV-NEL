@@ -19,23 +19,22 @@ The software is implemented as an Android Studio project and is used to control 
 
 ## Three-step measurement workflow
 
-<img width="1888" height="870" alt="流程图" src="https://github.com/user-attachments/assets/391603a0-74ab-4f23-b90e-92adb525245f" />
-
+<img width="1888" height="870" alt="流程图" src="https://github.com/user-attachments/assets/b364d0b9-9451-4483-84c3-342724e2749f" />
 
 
 BV-NEL follows a three-step workflow:
 
 ### Step 1. Initial potential measurement
 
-The initial open-circuit potential is recorded for **40 s**. The averaged value is used as the initial potential, **Einitial**. This value is used only to define the next measurement window and is **not** reported as the final Eh.
+The initial open-circuit potential is recorded for **40 s**. The mean potential within the final **1 s** is used as the initial potential, **E<sub><i>initial</i></sub>**.
 
 ### Step 2. Preliminary potential-step measurement
 
-A coarse local response is measured around **Einitial ± 100 mV** using **3 potential steps**. Each i-t measurement lasts **8 s**, with data recorded every **0.1 s**. The average current from the final part of each i-t step is used for linear fitting to identify a preliminary zero-current potential, **Eprelim**.
+A coarse local response is measured around **E<sub><i>initial</i></sub> ± 100 mV** using **3 potential steps**. Each i-t measurement lasts **8 s**, with data recorded every **0.1 s**. The average current from the final **1 s** of each i-t step is used for linear fitting to identify a preliminary zero-current potential, **E<sub><i>prelim</i></sub>**.
 
 ### Step 3. Refined near-equilibrium measurement
 
-A refined near-equilibrium response is measured around **Eprelim ± 10 mV** using **5 potential steps**. Each i-t measurement lasts **8 s**, with data recorded every **0.1 s**. The final Eh is calculated from the zero-current intercept of the current-potential linear fit. The fit is accepted when the R² value meets the preset quality-control criterion.
+A refined near-equilibrium response is measured around **E<sub><i>prelim</i></sub> ± 10 mV** using **5 potential steps**. Each i-t measurement lasts **8 s**, with data recorded every **0.1 s**. The average current from the final **1 s** of each i-t step is used for the final current-potential linear fitting. The final Eh is calculated from the zero-current intercept of this local linear fit. The fit is accepted when the R² value meets the preset quality-control criterion.
 
 ## How to use BV-NEL
 
@@ -51,19 +50,14 @@ A refined near-equilibrium response is measured around **Eprelim ± 10 mV** usin
 
 ## Example files
 
-The `examples/` folder contains demonstration files showing the expected output format and timing structure:
+The `examples/` folder contains only files exported or captured directly from the mobile-side workflow:
 
-| File | Description |
+| File/folder | Description |
 |---|---|
-| `examples/ocp_raw_data_example.csv` | Example OCP data for Step 1. |
-| `examples/coarse_it_raw_data_example.csv` | Example coarse i-t data for Step 2. |
-| `examples/fine_it_raw_data_example.csv` | Example refined i-t data for Step 3. |
-| `examples/step_average_and_fitting_results.csv` | Example step averages and fitting results. |
-| `examples/timing_schedule_example.csv` | Example timing schedule matching the measurement workflow. |
-| `examples/records/` | Example TXT record export. |
-| `examples/screenshots/` | Example screenshots of the result and record pages. |
+| `examples/records/` | Example TXT file exported from the record-management page. |
+| `examples/screenshots/` | Example screenshots showing the result page and record page. |
 
-The demonstration files are provided to explain the data structure and workflow. They should be replaced with real exported data when archiving final experimental datasets.
+These files are provided only to show the expected record-export format and user-interface output. Intermediate OCP values, potential-step currents, and fitting tables are not included as example files in this repository.
 
 ## Repository contents
 
@@ -71,7 +65,7 @@ The demonstration files are provided to explain the data structure and workflow.
 |---|---|
 | `app/` | Main Android Studio source code, including the user interface, USB communication, protocol encoding/decoding, BV-NEL workflow control, data processing, record management, and TXT export. |
 | `docs/` | Method documentation, parameter table, data-format notes, record-management notes, communication protocol, and workflow figure. |
-| `examples/` | Demonstration data, timing schedule, TXT record export example, diagnostic log, and screenshots. |
+| `examples/` | Mobile-side TXT record export example and screenshots. |
 | `gradle/`, `build.gradle.kts`, `settings.gradle.kts`, `gradle.properties`, `gradlew`, `gradlew.bat` | Android Studio/Gradle project files required for building the software. |
 | `README.md` | Overview and usage instructions. |
 | `GITHUB_UPLOAD_CHECKLIST.md` | Checklist for reviewing files before public release. |
@@ -83,7 +77,7 @@ The demonstration files are provided to explain the data structure and workflow.
 
 | File | Main role |
 |---|---|
-| `app/src/main/java/com/example/eprotocol/domain/TestOrchestrator.kt` | Controls the BV-NEL measurement sequence: OCP, coarse i-t, preliminary fitting, refined i-t, and final Eh fitting. |
+| `app/src/main/java/com/example/eprotocol/domain/TestOrchestrator.kt` | Controls the BV-NEL measurement sequence: initial potential measurement, coarse i-t measurement, preliminary fitting, refined i-t measurement, and final Eh fitting. |
 | `app/src/main/java/com/example/eprotocol/domain/MathUtils.kt` | Provides averaging, linear regression, R² calculation, and outlier handling. |
 | `app/src/main/java/com/example/eprotocol/data/usb/ProtocolCodec.kt` | Builds hex commands, buffers incoming streams, parses data packets, reads calibration data, and converts raw current/potential values. |
 | `app/src/main/java/com/example/eprotocol/data/usb/UsbSerialManager.kt` | Manages USB permission, serial-port configuration, connection state, and data input/output. |
