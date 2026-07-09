@@ -52,12 +52,13 @@ Schematic diagram of the app page
 <p align="center">
   <img width="600" height="400" alt="示例截图" src="https://github.com/user-attachments/assets/cd87cbff-7def-457c-a0c3-c4d04323301b" />
 
+Usage process
 1. Connect the three electrodes of electrochemistry to the electrochemical workstation.
 2. Connect the electrochemical workstation to the mobile phone.
-3. Click "Start New Test" to begin the measurement.
-4. Click "Save This Result" to customize the sample name.
-5. After the test, click "Records" to display All the results, and then click "Export All Records" to output the results.
-6. After the tests of 9 samples are completed, click "Clear" to clear all current records, and then continue to measure the subsequent samples.
+3. Click "**Start New Test**" to begin the measurement.
+4. Click "**Save This Result**" to customize the sample name.
+5. After the test, click "Records" to display All the results, and then click "**Export All Records**" to output the results.
+6. After the tests of 9 samples are completed, click "**Clear**" to clear all current records, and then continue to measure the subsequent samples.
 
 
 ## Repository contents
