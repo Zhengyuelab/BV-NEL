@@ -37,27 +37,28 @@ A coarse local response is measured around **E<sub><i>initial</i></sub> ± 100 m
 
 A refined near-equilibrium response is measured around **E<sub><i>prelim</i></sub> ± 10 mV** using **5 potential steps**. Each i-t measurement lasts **8 s**, with data recorded every **0.1 s**. The average current from the final **1 s** of each i-t step is used for the final current-potential linear fitting. The final Eh is calculated from the zero-current intercept of this local linear fit. The fit is accepted when the R² value meets the preset quality-control criterion.
 
-## How to use BV-NEL
+## Installation of BV-NEL
 
 1. Open this repository in **Android Studio**.
 2. Sync the Gradle project and build the `app` module.
 3. Install the software on an Android device that supports USB communication.
 4. Connect the portable electrochemical workstation to the Android device using a USB data cable.
-5. Insert the working, counter, and reference electrodes into the sediment sample.
-6. Start a new measurement. BV-NEL will automatically perform Step 1, Step 2, and Step 3.
-7. Review the final Eh value, R² value, and final linear fit.
-8. Save the result if the measurement is valid.
-9. Use the records page to view saved records, delete individual records, clear a batch after export, or export all records as a TXT file.
 
-## Example results
+
+## Usage method of BV-NEL
 
 Schematic diagram of the app page
 
 <p align="center">
   <img width="600" height="400" alt="示例截图" src="https://github.com/user-attachments/assets/cd87cbff-7def-457c-a0c3-c4d04323301b" />
 
+1. Connect the three electrodes of electrochemistry to the electrochemical workstation.
+2. Connect the electrochemical workstation to the mobile phone.
+3. Click "Start New Test" to begin the measurement.
+4. Click "Save This Result" to customize the sample name.
+5. After the test, click "Records" to display All the results, and then click "Export All Records" to output the results.
+6. After the tests of 9 samples are completed, click "Clear" to clear all current records, and then continue to measure the subsequent samples.
 
-The App results display the measurement progress, linear fitting results, result naming, clearing, and data export.
 
 ## Repository contents
 
