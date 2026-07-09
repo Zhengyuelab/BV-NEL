@@ -1,8 +1,8 @@
 # BV-NEL
 
-**BV-NEL** stands for the **Butler-Volmer guided near-equilibrium linearization method**. It is a rapid electrochemical method for measuring the redox potential (Eh) of sediments. The method uses a portable electrochemical workstation and a three-electrode probe to actively sample the near-equilibrium current-potential response, then estimates Eh from the zero-current intercept of the final local linear fit.
+**BV-NEL** stands for the **Butler-Volmer guided near-equilibrium linearization method**. It is a rapid electrochemical method for measuring the redox potential (Eh) of sediments or soils. The method uses a portable electrochemical workstation and a three-electrode probe to actively sample the near-equilibrium current-potential response, then estimates Eh from the zero-current intercept of the final local linear fit.
 
-This repository provides the source code, method documentation, communication protocol, and example files needed to understand, build, and reproduce the BV-NEL workflow.
+This repository provides the Android App developed to implement and control the BV-NEL measurement workflow. The following files and documentation focus on the App source code, user interface, data acquisition procedure, result calculation, result storage, and data export functions.
 
 ## What BV-NEL does
 
