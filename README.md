@@ -53,7 +53,7 @@ A refined near-equilibrium response is measured around **E<sub><i>prelim</i></su
 
 Schematic diagram of the app page
 
-<img width="980" height="669" alt="示例截图" src="https://github.com/user-attachments/assets/cd87cbff-7def-457c-a0c3-c4d04323301b" />
+<img width="600" height="400" alt="示例截图" src="https://github.com/user-attachments/assets/cd87cbff-7def-457c-a0c3-c4d04323301b" />
 
 
 The App results display the measurement progress, linear fitting results, result naming, clearing, and data export.
