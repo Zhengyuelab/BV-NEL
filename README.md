@@ -19,9 +19,9 @@ The software is implemented as an Android Studio project and is used to control 
 
 ## Three-step measurement workflow
 
-<img width="1888" height="870" alt="流程图" src="https://github.com/user-attachments/assets/89aef09d-2142-4597-aeb7-7b03e267a67b" />
-
-
+<p align="center">
+  <img src="docs/images/Workflow.png" width="950" alt="BV-NEL three-step measurement workflow">
+</p>
 
 BV-NEL follows a three-step workflow:
 
@@ -44,27 +44,27 @@ A refined near-equilibrium response is measured around **E<sub><i>prelim</i></su
 3. Install the software on an Android device that supports USB communication.
 4. Connect the portable electrochemical workstation to the Android device using a USB data cable.
 
-
 ## Example files
 
-Schematic diagram of the app page
+Schematic diagram of the App page:
 
 <p align="center">
-  <img width="600" height="400" alt="示例截图" src="https://github.com/user-attachments/assets/cd87cbff-7def-457c-a0c3-c4d04323301b" />
+  <img src="examples/screenshots/Example.png" width="650" alt="BV-NEL App interface and records page">
+</p>
 
-Usage process
-1. Connect the three electrodes of electrochemistry to the electrochemical workstation.
-2. Connect the electrochemical workstation to the mobile phone.
-3. Click "**Start New Test**" to begin the measurement.
-4. Click "**Save This Result**" to customize the sample name.
-5. After the test, click "**Records**" to display All the results, and then click "**Export All Records**" to output the results.
-6. After the tests of 9 samples are completed, click "**Clear**" to clear all current records, and then continue to measure the subsequent samples.
+Usage process:
 
+1. Connect the three electrodes to the electrochemical workstation.
+2. Connect the electrochemical workstation to the mobile phone using a USB data cable.
+3. Click **Start New Test** to begin the measurement.
+4. Click **Save This Result** to customize the sample name.
+5. After the test, click **Records** to display all results, and then click **Export All Records** to export the measurement records.
+6. After the tests of 9 samples are completed, click **Clear** to clear the current records, and then continue to measure the subsequent samples.
 
 ## License and use restrictions
 
 This repository is released for non-commercial academic research, teaching, peer review, and reproducibility purposes. Commercial use is not permitted without prior written permission from the copyright holder(s) or the corresponding author of the associated publication. No patent license is granted. See `LICENSE` for details.
 
-## Notes before public release
+## Repository notes
 
-Before making this repository public, confirm whether the hardware communication protocol and full source code can be released under the included non-commercial academic research license. Do not upload signing keys, APK/AAB build outputs, or local configuration files.
+Signing keys, APK/AAB build outputs, local configuration files, and private hardware credentials should not be uploaded to this repository.
