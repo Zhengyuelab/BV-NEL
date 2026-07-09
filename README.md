@@ -50,7 +50,7 @@ A refined near-equilibrium response is measured around **E<sub><i>prelim</i></su
 
 ## Example files
 
-The `examples/` folder contains only files exported or captured directly from the mobile-side workflow:
+The `examples/` folder contains files exported or captured directly from the mobile-side workflow:
 
 | File/folder | Description |
 |---|---|
