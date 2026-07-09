@@ -1,0 +1,8 @@
+BV-NEL Test Records
+Generated: 2026-07-07 23:49:23
+Record count: 3/9
+
+No.	Sample name	Time	Eh (mV)	Fit R2
+1	Sample 1	2026-07-07 23:21:18	104.74	0.9295
+2	Sample 2	2026-07-07 23:24:28	109.67	0.9129
+3	Sample 3	2026-07-07 23:48:52	187.36	0.9125
