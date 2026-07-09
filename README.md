@@ -23,6 +23,7 @@ The software is implemented as an Android Studio project and is used to control 
   <img src="docs/images/Workflow.png" width="950" alt="BV-NEL three-step measurement workflow">
 </p>
 
+<br>
 
 BV-NEL follows a three-step workflow:
 
