@@ -29,7 +29,7 @@ BV-NEL follows a three-step workflow:
 
 ### Step 1. Initial potential measurement
 
-The initial open-circuit potential is recorded for **40 s**. The mean potential within the final **1 s** is used as the initial potential, **E<sub><i>initial</i></sub>**.
+A **40 s** potential measurement is performed to obtain an initial reference potential, **E<sub><i>initial</i></sub>**. The mean potential within the final **1 s** is used as **E<sub><i>initial</i></sub>**, which serves to guide the subsequent perturbation range.
 
 ### Step 2. Preliminary potential-step measurement
 
